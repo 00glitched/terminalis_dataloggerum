@@ -1,0 +1,114 @@
+Screen {
+	grid-size: 3 1;
+    layout: vertical;
+    background: $background;
+    color: $text;
+}
+
+/* configuracion */
+#panel_config {
+    width: 30%;
+    padding: 1 0;
+    border: round gray;
+    background: $surface;
+}
+
+/* panel */
+#panel_datos {
+    width: 70%;
+    layout: vertical;
+    padding: 1 1;
+    border: round gray;
+    background: $surface;
+}
+
+
+Static {
+    color: $text;
+    padding: 0 1;
+}
+
+
+.header_line {
+    text-style: bold;
+    color: $accent;
+    padding: 1 0;
+}
+
+/* datos y consola */
+.box {
+    height: 1fr;
+    content-align: left top;
+    border: round $accent;
+    padding: 1;
+    background: $boost;
+    color: $text;
+    overflow: hidden;
+}
+
+
+/* checkbox */
+Checkbox {
+    color: $text;
+    background: $surface;
+    border: solid $accent;
+    padding: 0 1;
+    height: auto;
+    width: 1fr;
+}
+
+/* entradas de texto y seleccion */
+Input, Select {
+    background: $surface;
+    color: $text;
+    border: solid $primary;
+}
+
+/* botones */
+Button {
+    color: $text;
+    background: $surface;
+    border: solid $accent;
+    padding: 0 0;
+    height: auto;
+    width: 1fr;
+}
+
+/* botones textual */
+Button.-success {
+    background: $success;
+    color: $text;
+    width: 1fr;
+}
+
+Button.-error {
+    background: $error;
+    color: $text;
+    width: 1fr;
+}
+
+Button.-primary {
+    background: $primary;
+    color: $text;
+    width: 1fr;
+}
+
+/* horizontal */
+Horizontal {
+    height: auto;
+    width: 1fr;
+    padding: 0 1;
+}
+
+/* compacto */
+.input-compact {
+    width: 16;
+}
+
+/* botones idk */
+#ctrl-buttons {
+    grid-size: 1 4;
+    grid-columns: auto 10;
+    column-span: 1;
+    height: auto;
+}
